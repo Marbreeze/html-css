@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Poppins:ital,wght@0,300;1,600&family=Yusei+Magic&display=swap");
 
 * {
   margin: 0;
@@ -79,11 +78,6 @@ nav {
   margin-top: 7em;
 }
 
-.introduction {
-  display: flex;
-  flex-direction: column;
-}
-
 .about {
   margin-left: 5%;
   color: orange;
@@ -99,55 +93,54 @@ div .p-about {
   font-size: 2em;
 }
 
-.hobbie {
+.hobbie ul {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 10%;
+  list-style: none;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
-.desc {
-  margin-top: 10%;
-  margin-left: 5%;
-  display: flex;
-  align-items: flex-end;
-  font-size: 3em;
-  color: orange;
-}
-
-.hobies {
-  font-family: "Asap", sans-serif;
-  font-weight: 600;
-  padding-left: 30%;
-  margin-left: 5%;
-  display: flex;
-  align-items: flex-end;
-  font-size: 3em;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.836) 0%,
-    rgb(223, 214, 203) 47%,
-    rgb(245, 239, 234) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ul .h-list {
+  font-size: 1em;
+  font-family: "Asap" sans-serif;
+  font-family: "Rubik", sans-serif;
+  width: 33.3333333%;
+  float: left;
+  color: white;
   letter-spacing: 1px;
 }
 
+.desc {
+  font-family: "Asap" sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2em;
+  margin-left: 5%;
+  color: orange;
+}
 
 @media only screen and (max-device-width: 480px) {
+  .nav-links {
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 0;
+  }
   .welcome-text {
     margin-top: 2%;
   }
   .cover-photo img {
     margin-top: 0.8em;
-    min-width: 30vh;
-    min-height: 100%;
+    margin-right: 0;
+    max-width: 50vh;
   }
 
   .about {
     min-width: 30vh;
     margin-top: 0.2em;
+  }
+  ul li .h-list {
+    padding: 3px;
+    width: 100%;
+    align-items: center;
   }
 }
 
@@ -155,6 +148,7 @@ div .p-about {
   .welcome-text {
     margin-top: 2%;
   }
+
   .cover-photo img {
     margin-top: 0.8em;
     min-width: 30vh;
