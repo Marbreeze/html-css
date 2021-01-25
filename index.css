@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Poppins:ital,wght@0,300;1,600&family=Yusei+Magic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #2e2b28;
+  font-size: calc(0.75em + 1vmin);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #e9efed;
+  font-family: "Asap", sans-serif;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px;
+}
+
+.welcome-text {
+  position: relative;
+  height: 3em;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  flex-grow: 2;
+  background-color: #b66d1e;
+  margin-top: 8em;
+}
+
+.w-text {
+  font-family: "Asap", sans-serif;
+  font-family: "Rubik", sans-serif;
+  margin-top: 1em;
+  margin-left: 0.2em;
+  color: whitesmoke;
+  font-size: 1.2em;
+  position: sticky;
+}
+
+.cover-photo img {
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: 0.7em;
+  border-color: #b66d1e;
+  border-radius: 2em;
+  direction: column;
+  min-width: 26vh;
+  max-width: 90%;
+  height: 50vh;
+  margin-right: 10em;
+  margin-top: 7em;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  margin-left: 5%;
+  color: orange;
+  font-size: 8em;
+}
+
+div .p-about {
+  margin-left: 5%;
+  color: orange;
+  text-align: center;
+  height: 30%;
+  width: 90%;
+  font-size: 2em;
+}
+
+.hobbie {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+
+.desc {
+  margin-top: 10%;
+  margin-left: 5%;
+  display: flex;
+  align-items: flex-end;
+  font-size: 3em;
+  color: orange;
+}
+
+.hobies {
+  font-family: "Asap", sans-serif;
+  font-weight: 600;
+  padding-left: 30%;
+  margin-left: 5%;
+  display: flex;
+  align-items: flex-end;
+  font-size: 3em;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.836) 0%,
+    rgb(223, 214, 203) 47%,
+    rgb(245, 239, 234) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .welcome-text {
+    margin-top: 2%;
+  }
+  .cover-photo img {
+    margin-top: 0.8em;
+    min-width: 30vh;
+    min-height: 100%;
+  }
+
+  .about {
+    min-width: 30vh;
+    margin-top: 0.2em;
+  }
+}
+
+@media only screen and (max-device-width: 1030px) {
+  .welcome-text {
+    margin-top: 2%;
+  }
+  .cover-photo img {
+    margin-top: 0.8em;
+    min-width: 30vh;
+    min-height: 100%;
+  }
+
+  .about {
+    min-width: 30vh;
+    margin-top: 0.2em;
+  }
+}
