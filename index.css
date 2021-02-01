@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #2e2b28;
+  font-size: calc(0.75em + 1vmin);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #e9efed;
+  font-family: "Asap", sans-serif;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px;
+}
+
+.welcome-text {
+  position: relative;
+  height: 3em;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  flex-grow: 2;
+  background-color: #b66d1e;
+  margin-top: 8em;
+}
+
+.w-text {
+  font-family: "Asap", sans-serif;
+  font-family: "Rubik", sans-serif;
+  margin-top: 1em;
+  margin-left: 0.2em;
+  color: whitesmoke;
+  font-size: 1.2em;
+  position: sticky;
+}
+
+.cover-photo img {
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: 0.7em;
+  border-color: #b66d1e;
+  border-radius: 2em;
+  direction: column;
+  min-width: 26vh;
+  max-width: 90%;
+  height: 50vh;
+  margin-right: 10em;
+  margin-top: 7em;
+}
+
+.about {
+  margin-left: 5%;
+  color: orange;
+  font-size: 8em;
+}
+
+div .p-about {
+  margin-left: 5%;
+  color: orange;
+  text-align: center;
+  height: 30%;
+  width: 90%;
+  font-size: 2em;
+}
+
+.hobbie ul {
+  display: flex;
+  list-style: none;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+ul .h-list {
+  font-size: 1em;
+  font-family: "Asap" sans-serif;
+  font-family: "Rubik", sans-serif;
+  width: 33.3333333%;
+  float: left;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.desc {
+  font-family: "Asap" sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2em;
+  margin-left: 5%;
+  color: orange;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .nav-links {
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 0;
+  }
+  .welcome-text {
+    margin-top: 2%;
+  }
+  .cover-photo img {
+    margin-top: 0.8em;
+    margin-right: 0;
+    max-width: 50vh;
+  }
+
+  .about {
+    min-width: 30vh;
+    margin-top: 0.2em;
+  }
+  ul li .h-list {
+    padding: 3px;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-device-width: 1030px) {
+  .welcome-text {
+    margin-top: 2%;
+  }
+
+  .cover-photo img {
+    margin-top: 0.8em;
+    min-width: 30vh;
+    min-height: 100%;
+  }
+
+  .about {
+    min-width: 30vh;
+    margin-top: 0.2em;
+  }
+}
